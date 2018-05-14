@@ -1172,6 +1172,7 @@ nav#navbar-main li {
 
 .navbar-brand img {
   max-height: 50px;
+  float: left
 }
 
 .navbar-default .navbar-toggle .icon-bar {

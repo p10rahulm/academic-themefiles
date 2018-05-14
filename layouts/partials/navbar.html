@@ -15,6 +15,7 @@
       <a class="navbar-brand" href="{{ "/" | relLangURL }}">
         {{- if .Site.Params.logo -}}
         <img src="{{ printf "/img/%s" .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}">
+        {{- .Site.Title -}}
         {{- else -}}
         {{- .Site.Title -}}
         {{- end -}}
@@ -51,7 +52,7 @@
         </li>
 
         {{ else }}
-        
+
         {{/* Set target for link. */}}
         {{ $.Scratch.Set "target" "" }}
         {{ if gt (len .URL) 4 }}
